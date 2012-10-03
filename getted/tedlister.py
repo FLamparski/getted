@@ -26,6 +26,11 @@ class TEDTalk (object):
 	def getHQVideolink(self):
 		link = self.videolink.split('?')[0]
 		return link[:-4] + "-480p" + link[-4:]
+	
+	def __str__(self):
+		return self.title
+	def __unicode__(self):
+		return self.title
 
 def GetTEDTalks ():
 	ted_talks = [] # TEDTalk collection

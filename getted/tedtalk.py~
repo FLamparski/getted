@@ -1,6 +1,6 @@
 from gi.repository import Gtk, GdkPixbuf
 from urllib import request
-from getted.tedlister import TEDTalk
+from tedlister import TEDTalk
 
 class TEDTalkWidget (Gtk.Box):
 	def __init__ (self, talk):
